@@ -1,0 +1,14 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-weight: 400;
+  }
+
+  span {
+    color: $color-10;
+  }
+}

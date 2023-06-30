@@ -1,0 +1,17 @@
+:root {
+  box-sizing: border-box;
+  font-size: clamp(0.8rem, 3vw, 1.8rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $main-font;
+  margin: 0;
+  background-color: $color-60;
+  color: $color-30;
+}
