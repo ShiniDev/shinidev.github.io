@@ -1,0 +1,30 @@
+{
+  "name": "shinidev.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "sass:watch": "npx sass ./src/scss/style.scss:./src/style/style.css -w",
+    "build": "npx sass ./src/scss/style.scss:./src/style/style.css && npx postcss ./src/style/style.css --use autoprefixer -o ./src/style/style.prefixed.css && npx cleancss -o ./style.min.css ./src/style/style.prefixed.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShiniDev/shinidev.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Mark Laurente",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShiniDev/shinidev.github.io/issues"
+  },
+  "homepage": "https://github.com/ShiniDev/shinidev.github.io#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "clean-css-cli": "^5.6.2",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.63.6"
+  }
+}
