@@ -1,0 +1,15 @@
+.header-layout {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $header-color;
+  display: flex;
+  justify-content: center;
+  padding: 0 3rem;
+
+  >.header {
+    display: flex;
+    flex: 1;
+  }
+}

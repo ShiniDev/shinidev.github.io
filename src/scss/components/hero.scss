@@ -1,14 +1,18 @@
 .hero {
-  height: 100vh;
+  height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   h1 {
     font-weight: 400;
+    margin: 0;
+    font-size: 2.5rem;
   }
 
   span {
     color: $color-10;
+    font-weight: 700;
   }
 }
