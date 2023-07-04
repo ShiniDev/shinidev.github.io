@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+.title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 1.5em;
+  margin: 2em 0;
+
+  h2 {
+    text-align: center;
+  }
+
+  h2::before {
+    font-size: 0.5em;
+    position: relative;
+    content: " ";
+    border-bottom: 1em solid $color-10;
+    display: block;
+    margin: 0 auto;
+    left: 1.50em;
+    top: 2.375em;
+    z-index: -1;
+  }
+}

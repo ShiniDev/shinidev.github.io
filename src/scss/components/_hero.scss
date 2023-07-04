@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 .hero {
+  position: relative;
   height: 100svh;
   display: flex;
   align-items: center;

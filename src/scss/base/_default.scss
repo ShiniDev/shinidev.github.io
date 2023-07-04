@@ -5,12 +5,15 @@
 :root {
   box-sizing: border-box;
   font-size: clamp(1rem, 2vw, 1.3rem);
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -18,4 +21,9 @@ body {
   margin: 0;
   background-color: $color-60;
   color: $color-30;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
 }

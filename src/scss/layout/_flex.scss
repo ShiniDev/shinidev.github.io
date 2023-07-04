@@ -1,0 +1,12 @@
+.row {
+  display: flex;
+  padding: 2em 0;
+  margin: 2em 0;
+  gap: .5em;
+
+  @for $i from 1 through 12 {
+    .column-#{$i} {
+      flex: calc(100% / (12 / $i));
+    }
+  }
+}
