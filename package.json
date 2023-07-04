@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "sass:watch": "npx sass ./src/scss/style.scss:./src/style/style.css -w",
-    "build": "npx sass ./src/scss/style.scss:./src/style/style.css && npx postcss ./src/style/style.css --use autoprefixer -o ./src/style/style.prefixed.css && npx cleancss -o ./style.min.css ./src/style/style.prefixed.css"
+    "build": "npx sass --verbose ./src/scss/style.scss:./src/style/style.css && npx postcss --verbose ./src/style/style.css --use autoprefixer -o ./src/style/style.prefixed.css && npx cleancss -d -o ./style.min.css ./src/style/style.prefixed.css"
   },
   "repository": {
     "type": "git",
