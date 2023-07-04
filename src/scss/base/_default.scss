@@ -1,3 +1,7 @@
+@use "../abstracts" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
   box-sizing: border-box;
   font-size: clamp(1rem, 2vw, 1.3rem);
