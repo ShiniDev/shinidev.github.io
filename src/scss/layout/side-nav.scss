@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+.side-nav {
+  background-color: $color-10;
+  position: fixed;
+  top: 8%;
+  left: 0;
+  border-radius: 1em;
+  padding: 0.5em;
+
+  >div {
+    padding: 1em 0.3em;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul>li+li {
+    margin-top: 1em;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-30;
+  }
+
+  img {
+    border-radius: 1em;
+    width: 2.5em;
+  }
+
+  svg {
+    width: 2em;
+  }
+}
