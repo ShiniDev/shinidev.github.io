@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+.highlight {
+  position: relative;
+}
+
+.highlight::after {
+  position: absolute;
+  display: block;
+  border-bottom: 0.5em solid $color-10;
+  width: 100%;
+  bottom: 5%;
+  left: 15%;
+  content: " ";
+  z-index: -1;
+}

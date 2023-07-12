@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.icon {
+  color: $color-10;
+  background-color: $color-30;
+  width: 2.2em;
+  height: 2.2em;
+  padding: 0.3em;
+  cursor: pointer;
+}
+
+.icon.round {
+  border-radius: 50%;
+}
