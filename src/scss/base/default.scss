@@ -4,15 +4,24 @@
 
 :root {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
 ::before,
 ::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: $color-60;
   color: $color-30;
+  font-family: $font;
+}
+
+main {
+  width: 1080px;
+  margin: 0 auto;
 }
