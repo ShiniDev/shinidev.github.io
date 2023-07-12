@@ -5,6 +5,7 @@
 :root {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: clamp(0.9em, 1vw, 1.2em);
 }
 
 *,
@@ -22,6 +23,12 @@ body {
 }
 
 main {
-  width: 1080px;
   margin: 0 auto;
+  width: 1080px;
+}
+
+@media (max-width: 1080px) {
+  main {
+    width: initial;
+  }
 }
