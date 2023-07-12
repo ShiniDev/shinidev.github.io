@@ -1,4 +1,4 @@
-.about-me {
+.projects {
   scroll-margin-top: 3rem;
 
   >div {
@@ -14,15 +14,14 @@
     margin-bottom: 1em;
   }
 
-  p {
-    font-size: 1.5rem;
-    text-align: justify;
-    line-height: 1.4;
+  .project-list {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media (max-width: 810px) {
-  .about-me {
+  .projects {
     >div {
       width: initial;
     }

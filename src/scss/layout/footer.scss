@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+.footer-layout {
+  background-color: $footer-bg;
+  padding: 0.5em;
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+  }
+
+  .copyright {
+    font-size: 0.8em;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0.3em;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: $color-60;
+    color: $color-30;
+    transition: background-color 400ms linear;
+  }
+
+  a:hover {
+    background-color: $color-10;
+  }
+}

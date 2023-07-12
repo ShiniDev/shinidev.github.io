@@ -1,9 +1,9 @@
 @use "../abstracts" as *;
 
-.side-nav {
+.nav {
   background-color: $color-10;
   position: fixed;
-  top: 8%;
+  top: 0;
   left: 0;
   border-radius: 1em;
   padding: 0.5em;
@@ -38,5 +38,27 @@
 
   svg {
     width: 2em;
+  }
+}
+
+@media (max-width: 30em) {
+  .nav {
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    padding: 0.3em;
+
+    >div {
+      padding: 0 1em;
+    }
+
+    ul {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    ul>li+li {
+      margin-top: 0;
+    }
   }
 }

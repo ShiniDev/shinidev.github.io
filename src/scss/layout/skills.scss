@@ -1,6 +1,8 @@
 @use "../abstracts" as *;
 
 .skills {
+  scroll-margin-top: 3rem;
+
   >div {
     padding: 0.5em;
     margin: 0 auto;
@@ -15,9 +17,9 @@
   }
 
   .skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
   }
 
   .skill-list>* {
@@ -40,5 +42,17 @@
     background-color: $color-10;
     padding: 0.3em;
     border-radius: 0.5em;
+  }
+}
+
+@media (max-width: 810px) {
+  .skills {
+    >div {
+      width: initial;
+    }
+
+    .skill-list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
   }
 }
