@@ -1,0 +1,68 @@
+@use "../abstracts" as *;
+
+.project {
+  display: flex;
+  padding: 0.4em;
+  border-radius: 0.5em;
+
+  div:nth-child(1) {
+    flex: 40%;
+    margin-right: 2em;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex: 60%;
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.2;
+      text-align: justify;
+    }
+
+    .links {
+      display: flex;
+      margin-top: auto;
+      padding-top: 1em;
+
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-30;
+        background-color: $color-10;
+        width: 32px;
+        padding: 0.1em;
+        border-radius: 0.3em;
+      }
+    }
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 0.5em;
+    flex: 1;
+  }
+}
+
+@media (max-width: 30em) {
+  .project {
+    flex-direction: column;
+
+    div:nth-child(1) {
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+  }
+
+}
