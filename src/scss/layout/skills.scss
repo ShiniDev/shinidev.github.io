@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+.skills {
+  >div {
+    padding: 0.5em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: 810px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+
+  .skill-list>* {
+    flex-grow: 1;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill-list>* p {
+    font-size: 1.2rem;
+    margin-top: 1em;
+  }
+
+  svg {
+    height: 50%;
+    width: 50%;
+    background-color: $color-10;
+    padding: 0.3em;
+    border-radius: 0.5em;
+  }
+}
