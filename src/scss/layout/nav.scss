@@ -5,12 +5,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  border-radius: 1em;
-  padding: 0.5em;
-
-  >div {
-    padding: 1em 0.3em;
-  }
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 
   ul {
     list-style-type: none;
@@ -22,18 +18,36 @@
     justify-content: center;
   }
 
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em;
+  }
+
   ul>li+li {
-    margin-top: 1em;
+    padding-top: 1em;
   }
 
   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: $color-30;
   }
 
+  li.active {
+    background-color: $color-30;
+  }
+
+  li.active a {
+    color: $color-10;
+  }
+
   img {
-    border-radius: 1em;
-    width: 2.5em;
+    border-radius: 50%;
+    width: 2em;
   }
 
   svg {
@@ -58,7 +72,7 @@
     }
 
     ul>li+li {
-      margin-top: 0;
+      padding-top: 0;
     }
   }
 }

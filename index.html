@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mark | Developer</title>
   <link rel="shortcut icon" href="./src/assets/shinidev_16x16.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="style.min.css?v=2">
 </head>
 
 <body>
@@ -184,6 +184,35 @@
       </ul>
     </div>
   </div>
+  <script>
+    let navToggle = (entry, id) => {
+      let elem = document.querySelector(`li[title="${id}"]`);
+      if (entry.isIntersecting) {
+        elem.classList.add("active");
+      } else {
+        elem.classList.remove("active");
+      }
+    }
+    let callback = (entries) => {
+      entries.forEach((entry) => {
+        let target = entry.target.id.toLowerCase();
+        if (target == "headline") {
+          navToggle(entry, "Headline");
+        } else if (target == "about-me") {
+          navToggle(entry, "About Me");
+        } else if (target == "skills") {
+          navToggle(entry, "Skills");
+        } else if (target == "projects") {
+          navToggle(entry, "Projects");
+        }
+      });
+    };
+    let observer = new IntersectionObserver(callback, { rootMargin: "-85% 0% -2% 0%" });
+    observer.observe(document.querySelector("#headline"));
+    observer.observe(document.querySelector("#about-me"));
+    observer.observe(document.querySelector("#skills"));
+    observer.observe(document.querySelector("#projects"));
+  </script>
 </body>
 
 </html>
