@@ -1,7 +1,5 @@
-@use "../abstracts" as *;
-
 .footer-layout {
-  background-color: $footer-bg;
+  background-color: var(--footer-bg);
   padding: 0.5em;
 
   .footer {
@@ -21,12 +19,11 @@
     padding: 0.3em;
     border-radius: 50%;
     text-decoration: none;
-    background-color: $color-60;
-    color: $color-30;
-    transition: background-color 400ms linear;
+    color: var(--color-30);
+    transition: color 400ms linear;
   }
 
   a:hover {
-    background-color: $color-10;
+    color: var(--active-color);
   }
 }

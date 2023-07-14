@@ -1,11 +1,25 @@
-@use "../abstracts" as *;
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: clamp(0.9em, 1vw, 1.2em);
+  --color-60: hsl(0, 5%, 95%);
+  --color-30: hsl(0, 5%, 5%);
+  --color-10: hsl(25, 95%, 60%);
+  --active-color: hsl(25, 95%, 50%);
+  --footer-bg: hsl(0, 10%, 90%);
+  --nav-bg: hsl(0, 5%, 99%);
+  --font: "Roboto", sans-serif;
+}
+
+.dark-theme {
+  --color-60: hsl(0, 5%, 5%);
+  --color-30: hsl(0, 10%, 88%);
+  --color-10: hsl(25, 95%, 45%);
+  --active-color: hsl(25, 95%, 65%);
+  --footer-bg: hsl(0, 1%, 10%);
+  --nav-bg: hsl(0, 5%, 1%);
 }
 
 *,
@@ -14,12 +28,13 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  transition: color 200ms linear, background-color 200ms linear;
 }
 
 body {
-  background-color: $color-60;
-  color: $color-30;
-  font-family: $font;
+  background-color: var(--color-60);
+  color: var(--color-30);
+  font-family: var(--font);
 }
 
 main {

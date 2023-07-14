@@ -1,12 +1,9 @@
-@use "../abstracts" as *;
-
 .skills {
   scroll-margin-top: 60svh;
 
   >div {
     padding: 0.5em;
-    margin: 0 auto;
-    margin-bottom: 2em;
+    margin: 2em auto;
     width: 810px;
   }
 
@@ -39,9 +36,10 @@
   svg {
     height: 50%;
     width: 50%;
-    background-color: $color-10;
+    background-color: var(--color-60);
+    fill: var(--color-30);
     padding: 0.3em;
-    border-radius: 0.5em;
+    border: 2px solid var(--color-30);
   }
 }
 
